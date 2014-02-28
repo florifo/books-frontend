@@ -33,16 +33,16 @@
     "grunt-contrib-jshint": "~0.8.0",
     "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-copy": "~0.5.0",
-    "load-grunt-tasks": "~0.3.0",
+    "grunt-contrib-uglify": "~0.3.2",
     "grunt-usemin": "~2.0.2",
+    "load-grunt-tasks": "~0.3.0",
     "time-grunt": "~0.2.8",
+    "requirejs": "~2.1.9",
     "karma-script-launcher": "~0.1.0",
     "karma-chrome-launcher": "~0.1.1",
     "karma-html2js-preprocessor": "~0.1.0",
     "karma-firefox-launcher": "~0.1.2",
-    "requirejs": "~2.1.9",
     "karma-requirejs": "~0.2.0",
-    "karma-coffee-preprocessor": "~0.1.1",
     "karma-phantomjs-launcher": "~0.1.1",
     "karma": "~0.10.8",
     "mocha": "~1.15.1",
@@ -51,8 +51,8 @@
     "karma-sinon": "~1.0.0",
     "karma-html-reporter": "~0.1.1",
     "karma-spec-reporter": "0.0.8",
-    "grunt-contrib-uglify": "~0.3.2",
-    "bower": "~1.2.8"
+    "bower": "~1.2.8",
+    "cucumber": "~0.3.3"
   },
   "engines": {
     "node": ">=0.8.0"

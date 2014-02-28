@@ -162,3 +162,24 @@ El ejemplo con break points y demas esta en esta direccion [ver](http://jgatjens
 Si tienen alguna pregunta por favor, por favor, por favor hacerla.. nos ayuda a todos que tengan dudas y consultas que hacer.
 
 
+## Frontend - Sprint 5 ( viernes 14 de Marzo )
+
+Antes de empezar con este sprint deberan crear un tag en el repositorio llamado "sprint-5" ej:
+```sh
+git tag sprint-5 -m 'ej: Js funcionality'
+git push --tags #sube los cambios al branch remoto (github)
+```
+
+---
+#### En el siguiente link pueden descargar los assets necesarios para el sprint ( wireframe) [download](https://drive.google.com/folderview?id=0B08r1h3RbqoEdC12NVdjYl80SHc&usp=sharing).
+---
+
+El ejemplo con break points y demas esta en esta direccion [ver](http://jgatjens.github.io/books-frontend/)
+
+#### Tasks
+- Revisar los wireframes para ver funcionalidad.
+
+
+
+Si tienen alguna pregunta por favor, por favor, por favor hacerla.. nos ayuda a todos que tengan dudas y consultas que hacer.
+

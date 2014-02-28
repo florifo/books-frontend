@@ -16,13 +16,16 @@ App.init = function() {
 	var books = new App.models.Books();
 
   // fetch all the books inside books mongo collection
-	books.fetch(function(data) {
-    console.log(data);
+	books.fetch(function(err) {
+
+      if (err) return throw ("error");
+
+      console.log(this.data);
 	});
 
 };
 
 // Waits for dom to be ready to manipulate it
-$(document).ready( function() {
-	App.init();
-});
+// $(document).ready( function() {
+App.init();
+// });

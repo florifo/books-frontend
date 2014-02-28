@@ -12,19 +12,24 @@ module.exports = function(config) {
     // frameworks to use
     frameworks: ['mocha', 'chai', 'sinon'],
 
+    preprocessors: {
+      'app/**/*.html': ['html2js']
+    },
 
     // list of files / patterns to load in the browser
     files: [
         // {pattern: 'js/**/*.js', included: false},
         // {pattern: 'src/**/*.js', included: false},
-        // {pattern: 'test/**/*Spec.js', included: false}
 
-        'app/bower_components/jquery/jquery.js',
-        'app/js/app.conf.js',
-        'app/js/models/*.js',
+
+        // 'app/js/app.conf.js',
+        // 'app/js/models/*.js',
+
+        // simple patterns to load the needed testfiles
+        {pattern: 'app/index.html', included: true, served: false},
 
         // tests
-        'test/spec/models/*.spec.js'
+        {pattern: 'test/spec/models/*.spec.js', included: true}
     ],
 
 
@@ -66,7 +71,7 @@ module.exports = function(config) {
     // - Safari (only Mac)
     // - PhantomJS
     // - IE (only Windows)
-    browsers: ['Chrome'],
+    browsers: [ process.env.TRAVIS ? 'Firefox' : 'Chrome'],
 
 
     // If browser does not capture in given timeout [ms], kill it
