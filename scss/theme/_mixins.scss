@@ -1,0 +1,17 @@
+
+
+// Media queries
+// -------------------------
+
+
+@mixin if-max($max) {
+  @media only screen and (max-width: #{$max}) {
+    @content;
+  }
+}
+
+@mixin if-mobile {
+  @include if-max(680px) {
+    @content;
+  }
+}

@@ -6,8 +6,6 @@ require.config({
 
 define(['text!./navbar.hbs', 'dropdown'], function(template) {
   return {
-
-
     
     initialize: function() {
       this.html(template);

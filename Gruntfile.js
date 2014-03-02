@@ -1,4 +1,4 @@
-  'use strict';
+'use strict';
 var LIVERELOAD_PORT = 35729;
 var lrSnippet = require('connect-livereload')({port: LIVERELOAD_PORT});
 var mountFolder = function (connect, dir) {
@@ -12,6 +12,11 @@ module.exports = function(grunt) {
     app: '.'
   }
 
+  require('time-grunt')(grunt);
+  // Load all Grunt tasks
+  require('load-grunt-tasks')(grunt);
+
+    
   // Project configuration.
   grunt.initConfig({
     config: config,
@@ -21,10 +26,6 @@ module.exports = function(grunt) {
         compass: {
             files: ['scss/{,*/}*.{scss,sass}'],
             tasks: ['compass:server']
-        },
-        less: {
-            files: ['less/{,*/}*.less'],
-            tasks: ['less:dev']
         },
         livereload: {
             options: {
@@ -65,16 +66,19 @@ module.exports = function(grunt) {
     },
     compass: {
         options: {
+            // If you're using global Sass gems, require them here.
+            // require: ['bootstrap-sass', 'font-awesome-sass'],
+            require: ['bootstrap-sass', 'compass-flexbox'],
             sassDir: 'scss',
             cssDir: 'css',
             generatedImagesDir: 'img',
             imagesDir: 'img',
             // javascriptsDir: 'js',
-            fontsDir: 'css/fonts',
+            fontsDir: '/bower_components/bootstrap/',
             // importPath: 'js',
             httpImagesPath: '/img',
             httpGeneratedImagesPath: '/img',
-            httpFontsPath: '/css/fonts',
+            httpFontsPath: '/bower_components/bootstrap/',
             relativeAssets: false,
             noLineComments: false
         },
@@ -84,53 +88,29 @@ module.exports = function(grunt) {
             }
         }
     },
-    less: {
-      dev: {
-        options: {
-          paths: ["img"],
-          dumpLineNumbers: "all",
-          debugInfo: false
-        },
-        files: {
-          "css/style.css": "less/style.less"
-        }
-      },
-      prod: {
-        options: {
-          paths: ["img"],
-          cleancss: true,
-          debugInfo: false
-        },
-        files: {
-          "css/style.css": "less/style.less"
-        }
-      }
-    },
     concurrent: {
-        compass: ['compass:server'],
-        less: ['less:dev']
+        compass: ['compass:server']
     }
   });
 
   // These plugins provide necessary tasks.
-  grunt.loadNpmTasks('grunt-contrib-compass');
-  grunt.loadNpmTasks('grunt-contrib-less');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-connect');
-  grunt.loadNpmTasks('grunt-concurrent');
-  grunt.loadNpmTasks("grunt-open");
+  // grunt.loadNpmTasks('grunt-contrib-compass');
+  // grunt.loadNpmTasks('grunt-contrib-watch');
+  // grunt.loadNpmTasks('grunt-contrib-connect');
+  // grunt.loadNpmTasks('grunt-concurrent');
+  // grunt.loadNpmTasks("grunt-open");
 
 
   // grunt server --css=less
   // this will compile less instead of default compass.
-  var preprocessor = grunt.option('css') || 'compass';
+  // var preprocessor = grunt.option('css') || 'compass';
 
   grunt.registerTask('server', function (target) {
 
     grunt.task.run([
         // 'clean:server',
-        // 'autoprefixer',
-        'concurrent:' + preprocessor,
+        // 'concurrent:' + preprocessor,
+        'concurrent:compass',
         'connect:livereload',
         'open',
         'watch'

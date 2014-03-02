@@ -6,11 +6,10 @@
   "directories": {
     "doc": "doc"
   },
-  "contributors": ["Jairo Gätjens"],
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:jgatjens/books-frontend.git"
-  },
+  "contributors": [
+    "Jairo Gätjens"
+  ],
+  "repository": "",
   "dependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-connect": "~0.5.0",
@@ -25,12 +24,15 @@
   "scripts": {
     "test": "mocha"
   },
-  "repository": "",
   "keywords": [
     "js",
     "books",
     "app"
   ],
   "author": "Me",
-  "license": "BSD"
+  "license": "BSD",
+  "devDependencies": {
+    "load-grunt-tasks": "~0.4.0",
+    "time-grunt": "~0.2.10"
+  }
 }

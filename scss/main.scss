@@ -1,0 +1,94 @@
+// Theme custom variables
+// @import "theme/variables";
+
+// Google Fonts
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,700");
+
+// Core variables and mixins
+@import "bootstrap/variables";
+@import "theme/variables";
+ 
+
+@import 'flexbox';
+
+// Font Awesome
+// still needs support for compass
+// @import "font-awesome";
+
+@import "bootstrap/mixins.scss";
+
+// Redfall custom mixins
+@import "theme/mixins";
+
+// Reset
+@import "bootstrap/normalize.scss";
+@import "bootstrap/print.scss";
+
+// Core CSS
+@import "bootstrap/scaffolding.scss";
+@import "bootstrap/type.scss";
+
+@import "bootstrap/code.scss";
+@import "bootstrap/grid.scss";
+@import "bootstrap/tables.scss";
+@import "bootstrap/forms.scss";
+@import "bootstrap/buttons.scss";
+
+// Components
+@import "bootstrap/component-animations.scss";
+@import "bootstrap/glyphicons.scss";
+@import "bootstrap/dropdowns.scss";
+// @import "bootstrap/button-groups.scss";
+// @import "bootstrap/input-groups.scss";
+@import "bootstrap/navs.scss";
+@import "bootstrap/navbar.scss";
+// @import "bootstrap/breadcrumbs.scss";
+@import "bootstrap/pagination.scss";
+// @import "bootstrap/pager.scss";
+// @import "bootstrap/labels.scss";
+// @import "bootstrap/badges.scss";
+// @import "bootstrap/jumbotron.scss";
+// @import "bootstrap/thumbnails.scss";
+// @import "bootstrap/alerts.scss";
+// @import "bootstrap/progress-bars.scss";
+// @import "bootstrap/media.scss";
+// @import "bootstrap/list-group.scss";
+// @import "bootstrap/panels.scss";
+// @import "bootstrap/wells.scss";
+// @import "bootstrap/close.scss";
+
+// Components w/ JavaScript
+
+// @import "bootstrap/modals.scss";
+// @import "bootstrap/tooltip.scss";
+// @import "bootstrap/popovers.scss";
+// @import "bootstrap/carousel.scss";
+
+// Theme Custom Components
+
+@import "theme/mixins.scss";
+@import "theme/navbar.scss";
+@import "theme/books.scss";
+@import "theme/pagination.scss";
+
+// Utility classes
+@import "bootstrap/utilities.scss";
+@import "bootstrap/responsive-utilities.scss";
+
+// Theme
+// @import "pages/homepage.scss";
+
+
+body {
+  padding-top: 50px;
+  background-color: #eaedf1;
+	> .container {
+		padding: 15px 30px;
+	}
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
