@@ -16,12 +16,15 @@ App.init = function() {
 	var books = new App.models.Books();
 
   // fetch all the books inside books mongo collection
-	books.fetch(function(err) {
+  books.fetch(function(data) {
+      // if (err) return throw ("error");
+      // console.log(this.data);
+  });
 
-      if (err) return throw ("error");
+  books.get('528d7b2e91c2838acea81ed5', function(data) {
+      // console.log(this.data);
+  });
 
-      console.log(this.data);
-	});
 
 };
 

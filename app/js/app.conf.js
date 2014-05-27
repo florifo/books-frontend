@@ -18,7 +18,7 @@ App.models = {};
 App.conf = {
 
     // Books api url
-    // rootUrl: 'http://books-backend.herokuapp.com/api/v1/'
+    rootUrl: 'http://books-backend.herokuapp.com/api/v1/'
 
-    rootUrl: 'http://localhost:4000/api/v1/'
+    // rootUrl: 'http://localhost:4000/api/v1/'
 };

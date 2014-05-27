@@ -217,7 +217,7 @@ module.exports = function(grunt) {
       }
 
       grunt.task.run([
-        'jshint',
+        // 'jshint',
         'concurrent:server',
         'connect:livereload',
         'open:server',
