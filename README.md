@@ -3,12 +3,12 @@ Book's App
 
 Book es una aplicaciC3n HTML5 que nos permetiria: 
 
-  - obtener bases solidas de Javascript
-  - aprender a testear nuestro código
-  - aprender a convertir un psd a html y css
-  - trabajar con flujos reales
-  - usar la metodologia agile para el proceso de desarrollo
-  - optimizaciC3n del proceso de desarrollo, calidad y produciC3n (gruntjs)
+  - Aprender a visualizar los proyectos de manera modular
+  - Aprender a convertir un psd a html y css
+  - Obtener bases solidas de Javascript
+  - Trabajar con flujos reales
+  - Usar la metodologia agile para el proceso de desarrollo
+  - OptimizaciC3n del proceso de desarrollo, calidad y produciC3n (gruntjs)
 
 Book's App es una pequeña aplicacion que lista todos los libros de tecnologia que esten en papel. Una vez un usuario este logeado podra saber quien esta leyendo algun libro de interes o podra reservar un libro para leerlo.
 
@@ -29,10 +29,10 @@ Estas son las tecnologias permitidas:
 * [Less]    - pre compilador de css
 
 Tecnologias/Librerias prohibidas:
-* [jQuery] 
-* [Bootstrap]
+* [jQuery] o ningun otro Framework de JS
 * [Foundation]
-* Cualquier Framework
+* [Bootstrap] o ningun otro Grid System
+
 
 La idea es hacer 
 
@@ -40,10 +40,11 @@ La idea es hacer
 
 
 ## Frontend - Sprint 1 
-- Crear repositorio para el frontend en su cuenta de github
 - Definir como va a crear su proyecto
     - Establecer que manejador de archivos vaa utilizar
-    - Definir su 
+    - Definir su estructura de archivos
+- Crear repositorio para el frontend en su cuenta de github
+- Instalar y armar su proyecto
 
 Cualquier duda, consulta o queja estamos a la orden.
 
@@ -64,7 +65,13 @@ El ejemplo con break points y demas esta en esta direccion [ver](http://jgatjens
 - bajar los assets necesarios
 - crear el html del proyecto
 - agregarle estilos al html
-- realizar los estilos para que el app sea responsive
+- usar html5.
+- realizar los estilos para que el app sea responsiver ( que tenga como minimo 3 breaks)
+ - Desktops
+ - Tablets
+ - Mobile
+- Podran utilizar FontAwesome o cualquier otro tipo the Iconos en fonts. le dejo un url donde pueden buscar iconos: [http://glyphsearch.com](http://glyphsearch.com/)
+- podran utilizar los mixins de compass (esquinas redondeadas, shadows, etc..).
 
 ## Frontend - Sprint 3
 
@@ -74,18 +81,26 @@ git tag sprint-3 -m 'ej: JS part 1'
 git push --tags #sube los cambios al branch remoto (github)
 ```
 
-Llego la hora de convetir el psd a html y css. E
+Esta etapa esta definida para la funcionalidad
 
 #### Tareas
-- convertir psd a html y css (sin utilizar ningun framework de css, bootstrap, foundation, etc.., algo como skeleton o algun otro framework que solo sea el cascaron estaria bien. ej: [skeleton](http://www.getskeleton.com/) tambien esta dispobile en scss y sass via bower ``` bower install skeleton-sass ``` ).
-- usar html5.
-- responsive ( que tenga como minimo 3 breaks)
- - Desktops
- - Tablets
- - Mobile
-- Podran utilizar FontAwesome o cualquier otro tipo the Iconos en fonts. le dejo un url donde pueden buscar iconos: [http://glyphsearch.com](http://glyphsearch.com/)
-- podran utilizar los mixins de compass (esquinas redondeadas, shadows, etc..).
+- funciones de JS puro
 
 
 Si tienen alguna pregunta por favor, por favor, por favor hacerla.. nos ayuda a todos que tengan dudas y consultas que hacer.
 
+## Frontend - Sprint 4
+
+Antes de empezar con este sprint deberan crear un tag en el repositorio llamado "sprint-4" ej:
+```sh
+git tag sprint-4 -m 'ej: JS part 2'
+git push --tags #sube los cambios al branch remoto (github)
+```
+
+Esta etapa esta definida para la segunda parte de la funcionalidad
+
+#### Tareas
+- funciones de JS puro
+
+
+Si tienen alguna pregunta por favor, por favor, por favor hacerla.. nos ayuda a todos que tengan dudas y consultas que hacer.
