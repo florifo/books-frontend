@@ -1,16 +1,16 @@
 Book's App
 =========
 
-Book es una aplicaciC3n HTML5 que nos permetiria: 
+Book es una aplicación HTML5 que nos permetiría:
 
+  - obtener bases solidas de Javascript
   - Aprender a visualizar los proyectos de manera modular
-  - Aprender a convertir un psd a html y css
-  - Obtener bases solidas de Javascript
-  - Trabajar con flujos reales
-  - Usar la metodologia agile para el proceso de desarrollo
-  - OptimizaciC3n del proceso de desarrollo, calidad y produciC3n (gruntjs)
+  - aprender a convertir un psd a HMTL5 y CSS3 bajo el concepto de "sitio responsivo" 
+  - trabajar con flujos reales
+  - usar la metodologia agile para el proceso de desarrollo
+  - optimización del proceso de desarrollo, calidad y produción
 
-Book's App es una pequeña aplicacion que lista todos los libros de tecnologia que esten en papel. Una vez un usuario este logeado podra saber quien esta leyendo algun libro de interes o podra reservar un libro para leerlo.
+Book va hacer una pequeña aplicación que listará todos los libros de tecnología que esten en papel. Una vez un usuario este logeado podrá saber quién esta leyendo algún libro de interés o podrá reservar un libro para leerlo.
 
 Version
 ----
@@ -20,87 +20,61 @@ Version
 Tech
 -----------
 
-Estas son las tecnologias permitidas:
+Estas son las tecnologías que usaremos:
 
-* [Gruntjs] - organizador de tareas
-* [Gulpjs]  - organizador de tareas
-* [Bower]   - manejador de dependencias frontend
-* [Sass]    - pre compilador de css
-* [Less]    - pre compilador de css
+* Grunt / Gulp - organizador de tareas
+* Bower        - manejador de dependencias frontend
+* SASS / LESS  - pre compilador de css
 
-Tecnologias/Librerias prohibidas:
-* [jQuery] o ningun otro Framework de JS
-* [Foundation]
-* [Bootstrap] o ningun otro Grid System
+## Frontend - Sprint 1
 
+Lineamientos del primer sprint:
 
-La idea es hacer 
+- crear un repositorio en su cuenta de github llamado "books-frontend" para el frontend
+- instalar nodejs
+- utilizar la estructura de archivos sugerida por [boilerplate](https://github.com/h5bp/html5-boilerplate)
+- crear un archivo de configuración de Grunt o Gulp que permita:
+    - correr SASS / LESS
+    - generar dinámicamente prefijos de selectores propietarios
+    - Refinar la estructura final de los CSS con base al orden de los selectores (ej: CSScomb) 
+    - minificar y concatenar Javascript / CSS
+    - recargar el browser después de un cambio
+    - preview server
+- usar Bower para manejar las dependencias
 
-[Documento de tecnologia](https://drive.google.com/file/d/0B08r1h3RbqoEUjhZUzk5QWVscW8/edit?usp=sharing)
+Nota: considerar el uso de linternas dentro del IDE de su preferencia.
 
+## Frontend - Sprint 2
 
-## Frontend - Sprint 1 
-- Definir como va a crear su proyecto
-    - Establecer que manejador de archivos vaa utilizar
-    - Definir su estructura de archivos
-- Crear repositorio para el frontend en su cuenta de github
-- Instalar y armar su proyecto
+Migrar el diseño proporcionado en el archivo pdf a HTML5 y CSS3 responsivos. No esta permitido el uso de frameworks de front-end como Bootstrap o Zurb Foundation, a no ser que se trate de un startup (ej: [skeleton](http://www.getskeleton.com/)) o complementos como [compass](http://compass-style.org/).
 
-Cualquier duda, consulta o queja estamos a la orden.
-
-
-## Frontend - Sprint 2 
-Antes de empezar con este sprint deberan crear un tag en el repositorio llamado "sprint-2" ej:
+Antes de empezar con este sprint se deberá crear un tag en el repositorio llamado "sprint-2". Ej:
 ```sh
 git tag sprint-2 -m 'ej: PSD to HTML'
 git push --tags #sube los cambios al branch remoto (github)
 ```
-En este Sprint vamos a covertir el PSD en Codigo. 
-En el siguiente link pueden descargar los assets necesarios para el sprint-2 ( PSD, wireframe, libro " Scalable and Modular Architecture for CSS" ) [download](https://drive.google.com/folderview?id=0B08r1h3RbqoEdC12NVdjYl80SHc&usp=sharing).
 
-El ejemplo con break points y demas esta en esta direccion [ver](http://jgatjens.github.io/books-frontend/)
+El código resultante debe contemplar al menos 3 breakpoints:
 
-#### Tareas
-
-- bajar los assets necesarios
-- crear el html del proyecto
-- agregarle estilos al html
-- usar html5.
-- realizar los estilos para que el app sea responsiver ( que tenga como minimo 3 breaks)
- - Desktops
- - Tablets
- - Mobile
-- Podran utilizar FontAwesome o cualquier otro tipo the Iconos en fonts. le dejo un url donde pueden buscar iconos: [http://glyphsearch.com](http://glyphsearch.com/)
-- podran utilizar los mixins de compass (esquinas redondeadas, shadows, etc..).
+- desktop
+- tablet
+- mobile
 
 ## Frontend - Sprint 3
 
-Antes de empezar con este sprint deberan crear un tag en el repositorio llamado "sprint-3" ej:
+Configurar un servidor falso con [json-server](https://www.npmjs.com/package/json-server) para simular la interación (solicitud y envío de datos) con un equipo remoto.
+
+Antes de empezar con este sprint se deberá crear un tag en el repositorio llamado "sprint-3". Ej:
 ```sh
-git tag sprint-3 -m 'ej: JS part 1'
+git tag sprint-2 -m 'ej: JS'
 git push --tags #sube los cambios al branch remoto (github)
 ```
 
-Esta etapa esta definida para la funcionalidad
+Inclusión de Javascript para las funcionalidades que lo requieran:
 
-#### Tareas
-- funciones de JS puro
+- login
+- Filtro de búsqueda por título y autor
+- reservar un libro
+- consultar disponibilidad de un libro
 
-
-Si tienen alguna pregunta por favor, por favor, por favor hacerla.. nos ayuda a todos que tengan dudas y consultas que hacer.
-
-## Frontend - Sprint 4
-
-Antes de empezar con este sprint deberan crear un tag en el repositorio llamado "sprint-4" ej:
-```sh
-git tag sprint-4 -m 'ej: JS part 2'
-git push --tags #sube los cambios al branch remoto (github)
-```
-
-Esta etapa esta definida para la segunda parte de la funcionalidad
-
-#### Tareas
-- funciones de JS puro
-
-
-Si tienen alguna pregunta por favor, por favor, por favor hacerla.. nos ayuda a todos que tengan dudas y consultas que hacer.
+No puede utulizarse JQuery.
