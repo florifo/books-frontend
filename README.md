@@ -81,4 +81,4 @@ Inclusión de Javascript para las funcionalidades que lo requieran:
 - reservar un libro
 - consultar disponibilidad de un libro
 
-No puede utulizarse JQuery.
+No puede utilizarse JQuery.
